@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -17,14 +17,14 @@ type formType = {
 const register = () => {
   const router = useRouter();
 
-  const [form, setForm] = React.useState<formType>({
+  const [form, setForm] = useState<formType>({
     fullname: "",
     email: "",
     password: "",
   });
 
-  const [showpassword, setShowPassword] = React.useState<boolean>(true);
-  const [active, setActive] = React.useState<number | null>(null);
+  const [showpassword, setShowPassword] = useState<boolean>(true);
+  const [active, setActive] = useState<number | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     try {

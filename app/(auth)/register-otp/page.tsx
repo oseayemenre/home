@@ -1,15 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import OtpBox from "@/public/components/otp";
 import Button from "@/public/components/Button";
-import Imagr from "next/image";
 
 const otp = () => {
-  const [active, setActive] = React.useState<number>(0);
+  const [active, setActive] = useState<number>(0);
   const arr = [1, 2, 3, 4];
   return (
     <main className='pt-6 px-6'>
