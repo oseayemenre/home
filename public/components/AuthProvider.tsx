@@ -6,8 +6,8 @@ type authProviderProps = {
   children: React.ReactNode;
 };
 
-const authProvider = ({ children }: authProviderProps) => {
+const AuthProvider = ({ children }: authProviderProps) => {
   return <SessionProvider>{children}</SessionProvider>;
 };
 
-export default authProvider;
+export default AuthProvider;

@@ -7,7 +7,7 @@ import Image from "next/image";
 import OtpBox from "@/public/components/otp";
 import Button from "@/public/components/Button";
 
-const otp = () => {
+const Otp = () => {
   const [active, setActive] = useState<number>(0);
   const arr = [1, 2, 3, 4];
   return (
@@ -122,4 +122,4 @@ const otp = () => {
   );
 };
 
-export default otp;
+export default Otp;

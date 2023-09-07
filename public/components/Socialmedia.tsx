@@ -11,7 +11,7 @@ type socialMediaProps = {
   provider: string;
 };
 
-const socialMedia = ({ image, provider }: socialMediaProps) => {
+const SocialMedia = ({ image, provider }: socialMediaProps) => {
   const router = useRouter();
 
   const handleSubmit = async () => {
@@ -42,4 +42,4 @@ const socialMedia = ({ image, provider }: socialMediaProps) => {
   );
 };
 
-export default socialMedia;
+export default SocialMedia;

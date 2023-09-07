@@ -14,7 +14,7 @@ type formType = {
   password: string | undefined;
 };
 
-const register = () => {
+const Register = () => {
   const router = useRouter();
 
   const [form, setForm] = useState<formType>({
@@ -148,4 +148,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

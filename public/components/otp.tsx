@@ -5,7 +5,7 @@ type otpBoxProps = {
   setActive: any;
   index: number;
 };
-const otpBox = ({ active, setActive, index }: otpBoxProps) => {
+const OtpBox = ({ active, setActive, index }: otpBoxProps) => {
   return (
     <input
       type='text'
@@ -31,4 +31,4 @@ const otpBox = ({ active, setActive, index }: otpBoxProps) => {
   );
 };
 
-export default otpBox;
+export default OtpBox;

@@ -14,7 +14,7 @@ type inputProps = {
   onChange: (e: any) => void;
 };
 
-const input = ({
+const Input = ({
   type,
   image,
   placeholder,
@@ -66,4 +66,4 @@ const input = ({
   );
 };
 
-export default input;
+export default Input;

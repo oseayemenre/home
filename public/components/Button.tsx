@@ -13,7 +13,7 @@ type buttonProps = {
   text: string;
   onSubmit?: (e: any) => void;
 };
-const button = ({
+const Button = ({
   pt,
   pb,
   pl,
@@ -46,4 +46,4 @@ const button = ({
   );
 };
 
-export default button;
+export default Button;

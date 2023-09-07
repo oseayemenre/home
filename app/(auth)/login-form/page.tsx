@@ -14,7 +14,7 @@ type formType = {
   password: string | undefined;
 };
 
-const loginForm = () => {
+const LoginForm = () => {
   const [form, setForm] = React.useState<formType>({
     email: "",
     password: "",
@@ -171,4 +171,4 @@ const loginForm = () => {
   );
 };
 
-export default loginForm;
+export default LoginForm;

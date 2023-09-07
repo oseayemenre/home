@@ -11,7 +11,7 @@ type inputbuttonProps = {
   text: string;
 };
 
-const inputButton = ({
+const InputButton = ({
   pt,
   pb,
   pl,
@@ -42,4 +42,4 @@ const inputButton = ({
   );
 };
 
-export default inputButton;
+export default InputButton;

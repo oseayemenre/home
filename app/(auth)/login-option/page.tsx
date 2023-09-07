@@ -4,7 +4,7 @@ import Button from "@/public/components/Button";
 import SocialMedia from "@/public/components/Socialmedia";
 import Link from "next/link";
 
-const Home = () => {
+const LoginOption = () => {
   return (
     <main className='mt-[17px] mx-[13px] h-screen flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:gap-x-[102px] lg:h-screen '>
       <Image
@@ -60,4 +60,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LoginOption;
