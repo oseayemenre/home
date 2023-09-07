@@ -36,7 +36,16 @@ const SocialMedia = ({ image, provider }: socialMediaProps) => {
         whileTap={{ scale: 0.8 }}
         onClick={handleSubmit}
       >
-        <Image src={image} alt='' width={25} height={25} />
+        <Image
+          src={image}
+          alt=''
+          width={25}
+          height={25}
+          style={{
+            height: "auto",
+            width: "auto",
+          }}
+        />
       </motion.button>
     </div>
   );

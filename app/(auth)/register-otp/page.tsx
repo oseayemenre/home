@@ -47,7 +47,7 @@ const Otp = () => {
             })}
           </div>
 
-          <div className='flex justify-center items-center mb-[20px] max-md:hidden'>
+          <div className='flex justify-center items-center mb-[20px] max-lg:hidden'>
             <div className='p-[15px] bg-[#F5F4F8] rounded-[100px] flex justify-center items-center gap-x-2 w-[90px] h-[50px]'>
               <Image
                 src='/assets/Group.svg'
@@ -62,7 +62,7 @@ const Otp = () => {
             </div>
           </div>
 
-          <div className='flex justify-center items-center mb-[19px] max-md:hidden'>
+          <div className='flex justify-center items-center mb-[19px] max-lg:hidden'>
             <Link href='/login-form'>
               <Button
                 pt={22}
@@ -75,7 +75,7 @@ const Otp = () => {
             </Link>
           </div>
 
-          <p className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] lg:pb-9 text-center max-md:hidden'>
+          <p className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] lg:pb-9 text-center max-lg:hidden'>
             Didn’t receive the OTP?
             <span className='text-[#1F4C6B] font-[700]'> Resend OTP</span>
           </p>
@@ -109,12 +109,17 @@ const Otp = () => {
           </div>
         </div>
 
+        <p className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] lg:pb-9 text-center lg:hidden'>
+          Didn’t receive the OTP?
+          <span className='text-[#1F4C6B] font-[700]'> Resend OTP</span>
+        </p>
+
         <Image
           src='/assets/undraw_city_life_gnpr 1.png'
           alt=''
           width={1167}
           height={279}
-          className='-mt-[200px] max-md:hidden'
+          className='-mt-[200px] max-lg:hidden'
           priority
         />
       </div>

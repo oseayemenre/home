@@ -83,7 +83,7 @@ const Register = () => {
       </motion.button>
 
       <div className='lg:w-full lg:flex lg:flex-col lg:items-center'>
-        <div className='lg:w-[375px] lg:h-[555px] lg:bg-white lg:shadow-[0_4px_4px_rgb(0,0,0,0.25),0_2px_4px_rgb(0,0,0,0.25)] lg:relative lg:z-[40] lg:flex lg:flex lg:flex-col lg:rounded-[75px] lg:justify-start lg:-mt-[70px] lg:items-center'>
+        <div className='lg:w-[375px] lg:h-[555px] lg:bg-white lg:shadow-[0_4px_4px_rgb(0,0,0,0.25),0_2px_4px_rgb(0,0,0,0.25)] lg:relative lg:z-[40] lg:flex lg:flex-col lg:rounded-[75px] lg:justify-start lg:-mt-[70px] lg:items-center'>
           <div className='lg:bg-white lg:w-[400px] lg:h-[50px] lg:absolute lg:-mt-[43px]' />
           <p className='text-[#252B5C] text-[25px] font-[500] tracking-[0.75px] mb-5'>
             Create your{" "}
@@ -139,7 +139,7 @@ const Register = () => {
           alt=''
           width={1167}
           height={279}
-          className='-mt-[200px] max-md:hidden'
+          className='-mt-[200px] max-xl:hidden'
           priority
         />
       </div>

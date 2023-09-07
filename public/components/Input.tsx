@@ -43,7 +43,16 @@ const Input = ({
       }}
       onClick={() => setActive(index)}
     >
-      <Image src={image} alt='' width={13} height={10} />
+      <Image
+        src={image}
+        alt=''
+        width={13}
+        height={10}
+        style={{
+          height: "auto",
+          width: "auto",
+        }}
+      />
 
       <input
         type={type}

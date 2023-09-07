@@ -78,6 +78,10 @@ const LoginForm = () => {
         alt=''
         width={408}
         height={175}
+        style={{
+          height: "auto",
+          width: "auto",
+        }}
         className='mb-1'
         priority
       />
