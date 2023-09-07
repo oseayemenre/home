@@ -119,7 +119,7 @@ const Otp = () => {
           alt=''
           width={1167}
           height={279}
-          className='-mt-[200px] max-lg:hidden'
+          className='-mt-[200px] max-xl:hidden'
           priority
         />
       </div>
