@@ -78,15 +78,11 @@ const LoginForm = () => {
         alt=''
         width={408}
         height={175}
-        style={{
-          height: "auto",
-          width: "auto",
-        }}
-        className='mb-1'
+        className='mb-1 md:hidden'
         priority
       />
 
-      <div className='mx-6 mb-[46px]'>
+      <div className='mx-6 mb-[46px] md:mt-6'>
         <p className='text-[#252B5C] text-[25px] font-[500] tracking-[0.75px] mb-[15px]'>
           {`Let's`}
           <span className='text-[#1F4C6B] text-[25px] font-[800]'>
