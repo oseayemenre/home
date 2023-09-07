@@ -15,7 +15,7 @@ type formType = {
 };
 
 const LoginForm = () => {
-  const [form, setForm] = React.useState<formType>({
+  const [form, setForm] = useState<formType>({
     email: "",
     password: "",
   });
