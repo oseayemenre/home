@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Input from "@/public/components/Input";
 import InputButton from "@/public/components/InputButton";
@@ -20,9 +20,9 @@ const loginForm = () => {
     password: "",
   });
 
-  const [incorrect, setIncorrect] = React.useState<boolean>(false);
-  const [showpassword, setShowPassword] = React.useState<boolean>(true);
-  const [active, setActive] = React.useState<number | null>(null);
+  const [incorrect, setIncorrect] = useState<boolean>(false);
+  const [showpassword, setShowPassword] = useState<boolean>(true);
+  const [active, setActive] = useState<number | null>(null);
 
   React.useEffect(() => {
     const response = async () => {
