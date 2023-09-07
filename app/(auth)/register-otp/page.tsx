@@ -27,14 +27,14 @@ const Otp = () => {
           <p className='text-[#252B5C] text-[25px] font-[500] tracking-[0.75px] lg:-ml-[70px] mb-5 lg:mb-[28px]'>
             Enter the <span className='text-[#234F68] font-[800]'>code</span>
           </p>
-          <p className='text-[12px] font-[400] tracking-[0.36px] text-[#53587A] mb-[90px] lg:ml-[50px]'>
+          <p className='text-[12px] font-[400] tracking-[0.36px] text-[#53587A] mb-[90px] lg:ml-[50px] lg:mb-[53px]'>
             Enter the 4 digit code that we just sent to{" "}
             <span className='text-[#252B5C] font-[600]'>
               jonathan@email.com
             </span>
           </p>
 
-          <div className='flex justify-between gap-x-[10px] items-center text-[#252B5C] mb-[130px]'>
+          <div className='flex justify-between gap-x-[10px] items-center text-[#252B5C] mb-[130px] lg:mb-[5px]'>
             {arr.map((items, index) => {
               return (
                 <OtpBox
@@ -62,7 +62,7 @@ const Otp = () => {
             </div>
           </div>
 
-          <div className='flex justify-center items-center mb-[31px] max-md:hidden'>
+          <div className='flex justify-center items-center mb-[19px] max-md:hidden'>
             <Link href='/login-form'>
               <Button
                 pt={22}
@@ -74,6 +74,11 @@ const Otp = () => {
               />
             </Link>
           </div>
+
+          <p className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] lg:pb-9 text-center max-md:hidden'>
+            Didn’t receive the OTP?
+            <span className='text-[#1F4C6B] font-[700]'> Resend OTP</span>
+          </p>
 
           <div className='flex justify-center items-center mb-[31px] lg:hidden'>
             <Link href='/login-form'>
@@ -102,11 +107,6 @@ const Otp = () => {
               </p>
             </div>
           </div>
-
-          <p className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] text-center'>
-            Didn’t receive the OTP?
-            <span className='text-[#1F4C6B] font-[700]'> Resend OTP</span>
-          </p>
         </div>
 
         <Image
