@@ -5,7 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const session = useSession();
 
   console.log(session);
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

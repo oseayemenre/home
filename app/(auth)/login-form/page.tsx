@@ -84,7 +84,7 @@ const LoginForm = () => {
 
       <div className='mx-6 mb-[46px]'>
         <p className='text-[#252B5C] text-[25px] font-[500] tracking-[0.75px] mb-[15px]'>
-          Let's
+          {`Let's`}
           <span className='text-[#1F4C6B] text-[25px] font-[800]'>
             {" "}
             Sign In
@@ -158,7 +158,7 @@ const LoginForm = () => {
             href='/register'
             className='text-[12px] text-[#53587A] font-[Raleway] font-[400] tracking-[0.36px] text-center'
           >
-            Don't have an account?
+            {`Don't have an account?`}
             <span className='text-[#1F4C6B] font-[700]'> Register</span>
           </Link>
 

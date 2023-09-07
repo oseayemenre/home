@@ -96,9 +96,8 @@ const Register = () => {
           <form className='mb-[10px]' onSubmit={handleSubmit}>
             {inputDetails.map((items, index) => {
               return (
-                <div className='mb-[15px]'>
+                <div className='mb-[15px]' key={index}>
                   <Input
-                    key={index}
                     active={active}
                     setActive={setActive}
                     index={index}

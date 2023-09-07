@@ -51,7 +51,7 @@ const LoginOption = () => {
             href='/register'
             className='text-[12px] text-[#53587A] font-[400] tracking-[0.36px] text-center'
           >
-            Don't have an account?
+            {`Don't have an account?`}
             <span className='text-[#1F4C6B] font-[700]'> Register</span>
           </Link>
         </div>
