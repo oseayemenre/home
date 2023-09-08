@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,7 +9,20 @@ import Button from "@/public/components/Button";
 
 const Otp = () => {
   const [active, setActive] = useState<number>(0);
+  const [countdown, setCountdown] = useState<number>(30);
   const arr = [1, 2, 3, 4];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountdown((prev) => prev - 1);
+      if (countdown <= 0) {
+        setCountdown(0o0);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  });
+
   return (
     <main className='pt-6 px-6'>
       <motion.button
@@ -57,7 +70,7 @@ const Otp = () => {
                 className='mb-[2px]'
               />
               <p className='text-[#225B5C] font-[Montserrat] text-[12px] font-[500] tracking-[0.36px]'>
-                00.21
+                {`00.${countdown < 10 ? "0" : ""}${countdown}`}
               </p>
             </div>
           </div>
@@ -103,7 +116,7 @@ const Otp = () => {
                 className='mb-[2px]'
               />
               <p className='text-[#225B5C] font-[Montserrat] text-[12px] font-[500] tracking-[0.36px]'>
-                00.21
+                {`00.${countdown < 10 ? "0" : ""}${countdown}`}
               </p>
             </div>
           </div>
