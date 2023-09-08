@@ -32,7 +32,7 @@ const authoptions: AuthOptions = {
           throw new Error("Input Credentials");
         }
 
-        const user = await prismadb.user?.findUnique({
+        const user = await prismadb.user.findUnique({
           where: {
             email: credentials?.email,
           },
