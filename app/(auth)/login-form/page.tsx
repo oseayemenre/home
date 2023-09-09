@@ -39,14 +39,22 @@ const LoginForm = () => {
     e.preventDefault();
 
     try {
-      await signIn("credentials", {
+      const res = await signIn("credentials", {
         email: form.email,
         password: form.password,
         redirect: false,
         callbackUrl: "/",
       });
 
-      router.push("/");
+      console.log(res);
+
+      if (res?.url) {
+        router.push("/");
+      }
+
+      if (res?.error) {
+        setIncorrect(true);
+      }
     } catch {
       console.log("Error");
     }
@@ -95,7 +103,7 @@ const LoginForm = () => {
         </p>
         {incorrect && (
           <p className='text-[10px] text-[#FA7979] font-[400] tracking-[0.3px] mb-2'>
-            Incorrect password for this account
+            Incorrect username or password
           </p>
         )}
         <form

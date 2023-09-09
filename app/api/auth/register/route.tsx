@@ -19,7 +19,7 @@ export const POST = async (req: NextRequest) => {
       data: {
         name,
         email,
-        password: hashedPassword,
+        hashedPassword
       },
     });
 

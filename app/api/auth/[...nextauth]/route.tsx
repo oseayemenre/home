@@ -38,13 +38,13 @@ const authoptions: AuthOptions = {
           },
         });
 
-        if (!user || !user.password) {
+        if (!user || !user.hashedPassword) {
           throw new Error("User doesn't exist");
         }
 
         const correctPassword = await bcrypt.compare(
           credentials.password,
-          user.password
+          user.hashedPassword
         );
 
         if (!correctPassword) {
