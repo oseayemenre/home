@@ -11,12 +11,15 @@ const Page = () => {
 
   console.log(session);
 
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   return (
     <main>
-      <FiMoon size={25} cursor='pointer' onClick={() => setTheme("light")} />
-      <BsSun size={25} cursor='pointer' onClick={() => setTheme("dark")} />
+      {theme === "dark" ? (
+        <BsSun size={25} cursor='pointer' onClick={() => setTheme("light")} />
+      ) : (
+        <FiMoon size={25} cursor='pointer' onClick={() => setTheme("dark")} />
+      )}
       <button className='bg-blue-300 dark:bg-red-200' onClick={() => signOut()}>
         page
       </button>

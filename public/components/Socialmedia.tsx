@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { useTheme } from "next-themes";
 
 type socialMediaProps = {
   image: string;
@@ -13,6 +14,9 @@ type socialMediaProps = {
 
 const SocialMedia = ({ image, provider }: socialMediaProps) => {
   const router = useRouter();
+  const { theme } = useTheme();
+
+  console.log(theme);
 
   const handleSubmit = async () => {
     await signIn(`${provider}`, {
@@ -35,7 +39,7 @@ const SocialMedia = ({ image, provider }: socialMediaProps) => {
         }}
         whileTap={{ scale: 0.8 }}
         onClick={handleSubmit}
-        className='dark:bg-[#1D1E1D]'
+        className='social'
       >
         <Image
           src={image}
