@@ -9,8 +9,8 @@ datasource db {
 
 model User {
   id String @id @map("_id") @default(auto()) @db.ObjectId
-  name String
-  email String @unique
+  name String?
+  email String? @unique
   hashedPassword String?
   image String?
   emailVerified DateTime?
@@ -32,11 +32,9 @@ model Account {
   token_type String?
   scope String?
   id_token String? @db.String
-  session_data String?
+  session_state String?
 
   
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   @@unique([provider, providerAccountId])
 }
-
-
