@@ -128,7 +128,10 @@ const LoginForm = () => {
 
           <div className='flex justify-between items-center font-["Raleway"] font-[600] tracking-[0.36px] text-[12px] text-[#1F4C6B] mb-[35px]'>
             <p>Forgot password?</p>
-            <p onClick={() => setShowPassword(!showpassword)}>
+            <p
+              onClick={() => setShowPassword(!showpassword)}
+              className='cursor-pointer'
+            >
               {showpassword ? "Show password" : "Hide password"}
             </p>
           </div>

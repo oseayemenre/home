@@ -1,19 +1,24 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, Children } from "react";
 import { signOut, useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
+import { FiMoon } from "react-icons/fi";
+import { BsSun } from "react-icons/bs";
+import { useTheme } from "next-themes";
 
 const Page = () => {
   const session = useSession();
 
   console.log(session);
 
+  const { theme, setTheme } = useTheme();
+
   return (
-    <button className='bg-red-500' onClick={() => signOut()}>
-      page
-    </button>
+    <main>
+      <button className='bg-blue-300 dark:bg-red-200' onClick={() => signOut()}>
+        page
+      </button>
+    </main>
   );
 };
 

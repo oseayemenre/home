@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "@/public/components/AuthProvider";
+import { ThemeProvider } from "@/public/components/ThemeProvider";
 
 type lato = {
   subsets: string;
@@ -23,9 +24,13 @@ const metadata: Metadata = {
 
 const RootLayout = ({ children }: RootLayoutProp) => {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <AuthProvider>
-        <body className={lato.className}>{children}</body>
+        <body className={lato.className}>
+          <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+            {children}
+          </ThemeProvider>
+        </body>
       </AuthProvider>
     </html>
   );
