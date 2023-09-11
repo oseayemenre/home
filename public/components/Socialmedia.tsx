@@ -13,18 +13,13 @@ type socialMediaProps = {
 };
 
 const SocialMedia = ({ image, provider }: socialMediaProps) => {
-  const router = useRouter();
-  const { theme } = useTheme();
-
-  console.log(theme);
-
   const handleSubmit = async () => {
     await signIn(`${provider}`, {
       callbackUrl: "/",
     });
   };
   return (
-    <div>
+    <div className='social'>
       <motion.button
         style={{
           paddingTop: "23px",
@@ -39,7 +34,7 @@ const SocialMedia = ({ image, provider }: socialMediaProps) => {
         }}
         whileTap={{ scale: 0.8 }}
         onClick={handleSubmit}
-        className='social'
+        className='dark:bg-[#1D1E1D]'
       >
         <Image
           src={image}

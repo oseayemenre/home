@@ -14,7 +14,3 @@ body {
   font-family: "Raleway", sans-serif;
   font-family: "Montserrat", sans-serif;
 }
-
-[data-theme="dark"] .social {
-  background-color: blue;
-}
