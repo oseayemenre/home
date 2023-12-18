@@ -49,7 +49,7 @@ const LoginForm = () => {
       console.log(res);
 
       if (res?.url) {
-        router.push("/");
+        router.push("/theme");
       }
 
       if (res?.error) {

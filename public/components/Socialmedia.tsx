@@ -34,7 +34,7 @@ const SocialMedia = ({ image, provider }: socialMediaProps) => {
         }}
         whileTap={{ scale: 0.8 }}
         onClick={handleSubmit}
-        className='dark:bg-[#1D1E1D]'
+        className='bg-[#1D1E1D]'
       >
         <Image
           src={image}

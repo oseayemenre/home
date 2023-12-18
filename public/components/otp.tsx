@@ -1,4 +1,6 @@
-import React, { ChangeEvent } from "react";
+"use client";
+
+import React, { useState, useCallback } from "react";
 
 type otpBoxProps = {
   active: number | null;
@@ -6,9 +8,20 @@ type otpBoxProps = {
   index: number;
 };
 const OtpBox = ({ active, setActive, index }: otpBoxProps) => {
+  const [otp, setOtp] = useState<string>("");
+  const handleOtp = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setOtp((prev) => `${prev}${e.target.value}`);
+    },
+    [otp]
+  );
+
+  console.log(otp);
   return (
     <input
       type='text'
+      value={otp}
+      onChange={handleOtp}
       maxLength={1}
       onClick={() => setActive(index)}
       style={{
